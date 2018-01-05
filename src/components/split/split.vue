@@ -11,8 +11,8 @@
 <style lang="stylus" rel="stylesheet/stylus">
   .split
     width: 100%
-    height: 16px
+    height: 10px
     border-top: 2px solid rgba(7, 17, 27, 0.1)
     border-bottom: 2px solid rgba(7, 17, 27, 0.1)
-    background: firebrick
+    background: #7e8c8d
 </style>

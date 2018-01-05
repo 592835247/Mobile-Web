@@ -5,24 +5,26 @@
       <!--Tap下划线还没完成-->
       <div class="popup"></div>
       <div class="fictitous hide"></div>
+      <!--轮播图-->
       <div class="allmodule module">
-          <div class="banner_item">
-              <mt-swipe :auto="2000">
-                <mt-swipe-item>
-                  <img src="../../common/imgs/lunbo1.jpg" alt="">
-                </mt-swipe-item>
-                <mt-swipe-item>
-                  <img src="../../common/imgs/lunbo2.jpg" alt="">
-                </mt-swipe-item>
-                <mt-swipe-item>
-                  <img src="../../common/imgs/lunbo3.jpg" alt="">
-                </mt-swipe-item>
-                <mt-swipe-item>
-                  <img src="../../common/imgs/lunbo4.jpg" alt="">
-                </mt-swipe-item>
-              </mt-swipe>
-            </div>
+        <div class="banner_item">
+          <mt-swipe :auto="2000">
+            <mt-swipe-item>
+              <img src="../../common/imgs/lunbo1.jpg" alt="">
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <img src="../../common/imgs/lunbo2.jpg" alt="">
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <img src="../../common/imgs/lunbo3.jpg" alt="">
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <img src="../../common/imgs/lunbo4.jpg" alt="">
+            </mt-swipe-item>
+          </mt-swipe>
         </div>
+      </div>
+      <!--商品列表-->
       <div class="columnnavdiv">
         <ul class="clearfix hottype pt10 pb10">
           <li class="fl" style="width: 20%;">
@@ -77,7 +79,9 @@
           </li>
         </ul>
       </div>
+      <!--分界线-->
       <split/>
+      <!--新人专享 图片-->
       <div class="swiper-wrapper">
         <div class="swiper-slide default_bg">
           <a href="https://sale.epet.com/m/1706/newWelfare.html?pet_type=dog&amp;fw=0" class="pointer">
@@ -85,16 +89,148 @@
           </a>
         </div>
       </div>
+      <!--商家活动 限时抢购-->
+      <div class="surprise_day">
+        <!--包裹器-->
+        <div class="surprise">
+          <!--每日疯抢-->
+          <div class="surprise-tit clearfix pad10 rela overflow">
+            <div class="fl titimg">
+              <img src="//static.epetbar.com/static_web/wap/src/images/suprice.png">
+            </div>
+            <div class="fl ft13 ml10" style="margin-top: 1px;">距离下一场</div>
+            <div class="time ftc fl ml5">
+              <div class="time1 dib clearfix ft12 dtime">
+                <span class="time1-1">00</span>
+                <span class="time-zi ft12">:</span>
+                <span class="time1-1">44</span>
+                <span class="time-zi ft12">:</span>
+                <span class="time1-1">47</span>
+              </div>
+            </div>
+            <div class="more">
+              <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0" class="db ftr">
+                <img src="https://img2.epetbar.com/nowater/2017-12/13/10/bc4f0db8483e9084f5923cb92bfe2b7a.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="surprise-pro pl5 mb10">
+            <div class="swiper-container surprise-scroll swiper-container-horizontal swiper-container-android" ref="goosX">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed">
+                        <img class="image" src="https://img1.epetbar.com/2017-05/31/10/5f9ff331b32047be265ba217ecd32ca1.jpg@!300w-b" lazy="loaded">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">2.48</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥22.32</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-next" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed">
+                        <img class="image" src="https://img1.epetbar.com/2017-09/28/10/c8d6a265f60e93c5ad03ac3777f142e5.jpg@!300w-b" lazy="loaded">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">4.80</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥43.20</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed">
+                        <img class="image" src="https://img1.epetbar.com/2017-08/04/10/9c91bafd70b0ed668eb7abb2420252bf.jpg@!300w-b" lazy="loaded">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">8.30</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥74.70</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block"><a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                    <div class="thispro-img loadimg-nofixed">
+                      <img class="image" src="https://img1.epetbar.com/2017-12/01/13/5f68537ffa126f1965def06f6e3b6a5c.jpg@!300w-b" lazy="loaded">
+                      <!----> <!----></div>
+                    <div class="cred ftc mt5">
+                      <span class="ft12">¥</span>
+                      <span class="ft17">3.20</span>
+                    </div>
+                    <p class="c999 ftc ft12">省￥28.80</p>
+                  </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed">
+                        <img class="image" src="https://img1.epetbar.com/2016-12/12/14/b0c8b9ff8526cd6e0cda27002b7797cb.jpg@!300w-b" lazy="loaded">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">8.80</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥79.20</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed"><img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" lazy="loading">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">2.65</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥23.85</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 94.2857px; margin-right: 10px;">
+                  <div class="pro-block">
+                    <a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
+                      <div class="thispro-img loadimg-nofixed">
+                        <img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" lazy="loading">
+                        <!----> <!----></div>
+                      <div class="cred ftc mt5">
+                        <span class="ft12">¥</span>
+                        <span class="ft17">4.25</span>
+                      </div>
+                      <p class="c999 ftc ft12">省￥38.25</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
   </div>
 </template>
 <script>
   import header from '../../components/header/header.vue'
+  import BScroll from 'better-scroll'
   export default{
     data(){
       return {}
     },
     mounted(){
+        new BScroll(this.$refs.goosX,{scrollX:true,click:true})
 
     },
     components:{
@@ -105,15 +241,13 @@
 <style lang="stylus" rel="stylesheet/stylus">
     .allmodule
       width: 100%
-      margin-top 85px
+      margin-top 141px
       .banner_item
         width: 100%
         height: 160px
        img
          width 100%
          height 160px
-
-
     .columnnavdiv
       overflow hidden
       .hottype
@@ -139,146 +273,97 @@
           img
             width 100%
 
-      .default_bg
+     /* .default_bg*/
         /*background: url(../images/background/default-epet.png) no-repeat center center #f4f4f4;
         background-size: 120px auto;
         overflow: hidden;*/
 
+    .surprise-tit
+      position relative
+      overflow hidden
+    .pad10
+      padding: 10px;
+    .overflow
+      overflow: hidden!important;
+      .titimg
+        float left
+        img
+          height: 24px;
+          margin-left: -20px;
+          display block
+      .ft13
+        font-size: 13px;
+        float left
+      .ml10
+        margin-left: 10px;
+        margin-top 2px
+        .dtime
+          overflow hidden
+      .more
+        position absolute
+        top: -10px
+        right -8px
+        .db
+          display block
+        .ftr
+          text-align right
+          img
+            width 50%
+            text-align center
+      .time
+        margin-left: 5px
+        float: left
+        text-align: center
+        .ft12
+          font-size: 12px;
+          display inline-block
+
+
+
+    .pl5
+      padding-left: 5px;
+    .mb10
+      margin-bottom: 100px;
+      margin-top 5px
+      .swiper-container
+        width:220%
+        height:100%
+        margin 0 auto
+        position relative
+        overflow hidden
+        .swiper-wrapper
+          width 150%
+          /*overflow hidden*/
+          position relative
+          .swiper-slide
+            width: 98px
+            margin-right 10px
+            display inline-block
+            & img
+              width:100%
+              display block
+            & span
+              color #f00
+              display inline-block
+              font-size 11px
+            & span:first-child
+              font-size 11px
+            & .ftc
+              text-align center
+              font-size:0
+            & .mt5
+              margin-top 5px
+            & .c999
+              font-size 12px
+              margin-top 4px
+          .pro-block
+            margin 10px
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*.main
-    max-width: 640px;
-    margin: auto
-    .indexnavcon
-      height: 86px;
-      .main
-        max-width: 640px;
-        margin: auto;
-        .clearfix
-          padding-left: 10px
-        .pd5
-          padding-bottom: 5px;
-        .pr10
-          padding-right: 10px;
-        .pt5
-          padding-top: 5px;
-          .epet-search
-            padding: 8px 0;
-            background: #fff;
-            text-align: center;
-            display: -webkit-box;
-            -webkit-box-align: center;
-            display: -moz-box;
-            -moz-box-align: center;
-            width: 100%;
-            .location
-              margin-right: 20px;
-            .rela
-              position: relative
-            .ft14
-              font-size 14px
-            .f1
-              float: left
-            .search-text
-              input
-                width: 100%;
-                border: 0;
-                height: 25px;
-                background: #e9e9e9;
-                border-radius: 4px;
-                color: #bcbcbc;
-                text-indent: 10px;
-                font-size: 13px;
-                outline: 0;
-
-              a
-                color: #333;
-                text-decoration: none;
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                .catordog c89
-                  color: #898989;
-                .ft13
-                  font-size: 13px;
-                i
-                  position: absolute;
-                  top: 10px;
-                  right: -11px;
-                  border-width: 4px;
-                  font-size: 0;
-                  line-height: 0;
-                  border-style: solid solid dotted;
-                  border-color: #898989 transparent transparent;
-            p
-              position: relative;
-            .epet-category img
-              width: 25px;
-              margin-left: 10px;
-              .epet-search .serach-ico
-                width: 11px;
-                height: 11px;
-                position: absolute;
-                right: 5px;
-                top: 0;
-                bottom: 0;
-                margin: auto 0;
-                background-position: 0 0;
-
-
-
-
-*/
-
-
-  /* .homeWrap
-     .headerWrap
-       width 100%
-       height 150px
-       .searchWrap
-         width 100%
-         height 51px
-         background-color #782
-         .searchBg
-           width 340px
-           height 41px
-           margin 8px auto
-           background: #000;
-           text-align: center;
-           .leftSearch
-             float left
-             line-height 41px
-             font-size 14px*/
 
 
 </style>
