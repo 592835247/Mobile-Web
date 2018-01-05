@@ -23,6 +23,68 @@
               </mt-swipe>
             </div>
         </div>
+      <div class="columnnavdiv">
+        <ul class="clearfix hottype pt10 pb10">
+          <li class="fl" style="width: 20%;">
+            <a href="https://wap.epet.com/group/v226/main.html?pettype=dog&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/de2bc9261bf6ebfc241f24133b854474.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="http://wap.epet.com/v2/brandsale.html?pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/b88234ac2e2cf0f2c6c36f5576e1acd3.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="http://wap.epetht.com/guide.html?pet_type=dog&amp;fw=0&amp;pet_type=dog">
+              <img src="https://img1.epetbar.com/2017-12/13/21/c1ebce34a16eadda5a934c142f9eab98.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="https://sale.epet.com/m/mould/fashion/main.html?pet_type=dog&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/ff6fe3be0ccc1cda104d649a5982dc62.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="http://wap.epet.com/activity/cleargoods.html?pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/ac5e9b46a46304ca486b50b229b0a65b.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="https://wap.epet.com/main.html?menu_param=4&amp;is_single=1&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/00a840c25cc2f28f03925f6237689c00.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="http://wap.epet.com/trial/?pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/2ac1504b1cd475560903ec8bbb48ff10.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="https://wap.epet.com/main.html?menu_param=121&amp;is_single=1&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/cc1ecc3676befd5155c613cb36183db4.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="https://wap.epet.com/article/video/List.html?do=KnowledgeVideo&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/bdef0401534ff876873138c92916f849.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+          <li class="fl" style="width: 20%;">
+            <a href="https://wap.epet.com/article/video/List.html?do=AdorableVideo&amp;pet_type=dog&amp;fw=0">
+              <img src="https://img1.epetbar.com/2017-12/13/21/b49c1cfa039724a157843d09a88b854e.jpg@!water" lazy="loaded">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <split/>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide default_bg">
+          <a href="https://sale.epet.com/m/1706/newWelfare.html?pet_type=dog&amp;fw=0" class="pointer">
+            <img src="https://img2.epetbar.com/nowater/2017-12/18/09/60c354a5d94be9fd114523ee77259c73.gif" lazy="loaded">
+          </a>
+        </div>
+      </div>
       </div>
   </div>
 </template>
@@ -52,11 +114,35 @@
          height 160px
 
 
+    .columnnavdiv
+      overflow hidden
+      .hottype
+        padding: 0
+        li
+          float left
+          a
+            img
+              width: 100%;
+              display: block;
 
 
 
 
 
+    .swiper-wrapper
+      width 100%
+      .swiper-slide
+        width: 100%;
+        height: 100%;
+        a
+          width 100%
+          img
+            width 100%
+
+      .default_bg
+        /*background: url(../images/background/default-epet.png) no-repeat center center #f4f4f4;
+        background-size: 120px auto;
+        overflow: hidden;*/
 
 
 
