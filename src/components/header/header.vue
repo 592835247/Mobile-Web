@@ -1,6 +1,8 @@
 <template>
     <div class="wrap">
-      <div class="header">
+      <div class="header" v-if="isShow">
+        <img class="close1" src="../../common/imgs/close1.png" alt=""
+        @click="close1">
         <router-link to="####"><img src="../../common/imgs/banner.jpg" alt=""></router-link>
       </div>
       <div id="indexbox" class="main">
@@ -55,14 +57,23 @@
 <script>
   import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
+  import PubSub from 'pubsub-js'
     export default{
         data(){
-            return {}
+            return {
+              isShow:true
+            }
         },
       mounted(){
             this.$nextTick(()=>{
               new BScroll(this.$refs.nav,{scrollX:true,click:true})
             })
+      },
+      methods:{
+         close1(){
+             this.isShow = !this.isShow
+              PubSub.publish('close',event.target)
+         }
       },
       computed:{
         ...mapState(['home'])
@@ -71,6 +82,7 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
  .wrap
+   width 100%
    position fixed
    top 0
    left 0
@@ -79,8 +91,11 @@
   .header
     height 55px
     width 100%
-
-    &>a
+    .close1
+      position absolute
+      top 0
+      left 0
+    a
       img
         width 100%
         height 100%
@@ -200,7 +215,7 @@
                width: 100%
                height: 100%
                .dscroll-ul
-                 width 140%
+                 width 130%
                  white-space: nowrap;
                  display: flex;
                  text-align center
