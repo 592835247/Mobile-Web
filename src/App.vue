@@ -24,15 +24,15 @@
         data(){
             return {}
         },
-      mounted(){
-            axios.get('/api/home')
-              .then(response=>{
-                  console.log(response.data);
-              })
-              .catch(error=>{
-                  console.log(error);
-              })
-      },
+//      mounted(){
+//            axios.get('/api/home')
+//              .then(response=>{
+//                  console.log(response.data);
+//              })
+//              .catch(error=>{
+//                  console.log(error);
+//              })
+//      },
       methods:{
         refreshIndex() {
           console.log(this.$route)

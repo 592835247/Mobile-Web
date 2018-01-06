@@ -6,21 +6,21 @@
       <div class="popup"></div>
       <div class="fictitous hide"></div>
       <!--轮播图-->
-      <div class="allmodule module">
+      <div class="allmodule module" v-if="LunboImg">
         <div class="banner_item">
           <mt-swipe :auto="2000">
-            <mt-swipe-item>
-              <img src="../../common/imgs/lunbo1.jpg" alt="">
+            <mt-swipe-item v-for="(imms,index) in LunboImg" :key="index">
+              <img :src="imms.image" alt="">
             </mt-swipe-item>
-            <mt-swipe-item>
-              <img src="../../common/imgs/lunbo2.jpg" alt="">
-            </mt-swipe-item>
-            <mt-swipe-item>
-              <img src="../../common/imgs/lunbo3.jpg" alt="">
-            </mt-swipe-item>
-            <mt-swipe-item>
-              <img src="../../common/imgs/lunbo4.jpg" alt="">
-            </mt-swipe-item>
+            <!--<mt-swipe-item>-->
+              <!--<img src="../../common/imgs/lunbo2.jpg" alt="">-->
+            <!--</mt-swipe-item>-->
+            <!--<mt-swipe-item>-->
+              <!--<img src="../../common/imgs/lunbo3.jpg" alt="">-->
+            <!--</mt-swipe-item>-->
+            <!--<mt-swipe-item>-->
+              <!--<img src="../../common/imgs/lunbo4.jpg" alt="">-->
+            <!--</mt-swipe-item>-->
           </mt-swipe>
         </div>
       </div>
@@ -221,20 +221,28 @@
       </div>
     </div>
   </div>
+
 </template>
 <script>
   import header from '../../components/header/header.vue'
   import BScroll from 'better-scroll'
+  import {mapState,mapGetters} from 'vuex'
   export default{
     data(){
       return {}
     },
     mounted(){
         new BScroll(this.$refs.goosX,{scrollX:true,click:true})
-
+      //发送请求获取数据
+      this.$store.dispatch('requestHome')
+      // console.log(this, 'sdfdsf');
     },
     components:{
       Eheader:header
+    },
+    computed:{
+      ...mapState(['home']),
+      ...mapGetters(['LunboImg'])
     }
   }
 </script>

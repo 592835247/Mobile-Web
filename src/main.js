@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+//引入Store对象
+import store from './store'
 import svgImage from './components/svg/svg_image.vue'
 //引入分割线的组件
 import split from './components/split/split.vue'
@@ -16,5 +18,6 @@ Vue.component('svgImage', svgImage)
 new Vue({
   el:'#app',
   render: h => h(App),
-  router
+  router,
+  store
 })

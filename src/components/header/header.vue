@@ -33,49 +33,12 @@
                   <div class="find_nav_left dscroll">
                     <div class="find_nav_list dscroll-div " ref="nav">
                       <ul class="dscroll-ul">
-                        <li data-type="0" data-shareid="1" class="dscroll-li on" style="width: 71.5px;">
+                        <li data-type="0" data-shareid="1" class="dscroll-li on" style="width: 71.5px;"
+                            v-for="(navItem,index) in home.menus" :key="index">
                           <a href="https://wap.epet.com/main.html?menu_param=0&amp;pet_type=dog&amp;fw=0">
-                            <!----> <span class="rela">
-                          <span>首页</span>
+                           <span class="rela">
+                          <span>{{navItem.menu_name}}</span>
                           <i></i></span>
-                          </a>
-                        </li>
-                        <li data-type="" data-shareid="0" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/clothmall/main.html?pet_type=dog&amp;fw=0">
-                            <!----> <span class="rela">
-                          <span>服饰城</span>
-                          <i></i></span>
-                          </a>
-                        </li>
-                        <li data-type="123" data-shareid="372" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/main.html?menu_param=123&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-                            <!----> <span class="rela">
-                          <span>狗狗主粮</span>
-                          <i></i>
-                        </span>
-                          </a>
-                        </li>
-                        <li data-type="125" data-shareid="374" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/main.html?menu_param=125&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-                            <!---->
-                            <span class="rela"><span>医疗保健</span><i></i></span>
-                          </a>
-                        </li>
-                        <li data-type="131" data-shareid="375" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/main.html?menu_param=131&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-                            <!----> <span class="rela">
-                          <span>零食玩具</span><i></i></span>
-                          </a>
-                        </li>
-                        <li data-type="134" data-shareid="0" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/main.html?menu_param=134&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-                            <!----> <span class="rela"><span>日用外出</span><i></i></span>
-                          </a>
-                        </li>
-                        <li data-type="140" data-shareid="371" class="dscroll-li" style="width: 71.5px;">
-                          <a href="https://wap.epet.com/main.html?menu_param=140&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-                            <!---->
-                            <span class="rela"><span>美容香波</span><i></i></span>
                           </a>
                         </li>
                       </ul>
@@ -91,12 +54,18 @@
 </template>
 <script>
   import BScroll from 'better-scroll'
+  import {mapState} from 'vuex'
     export default{
         data(){
             return {}
         },
       mounted(){
-            new BScroll(this.$refs.nav,{scrollX:true,click:true})
+            this.$nextTick(()=>{
+              new BScroll(this.$refs.nav,{scrollX:true,click:true})
+            })
+      },
+      computed:{
+        ...mapState(['home'])
       }
     }
 </script>
