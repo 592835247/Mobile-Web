@@ -3,7 +3,7 @@
     <div id="wrap" >
       <div class="switchtype">
         <div type="dog" class="go-dog pointer dog" v-show="isShowClose" @click.stop="ChangeClose1(true)"></div>
-        <div class="changepop bgfff block" style="transform:scale(0)" ref="main_pop" v-show="!isShowClose" >
+        <div class="changepop bgfff block" ref="main_pop" style = 'transform:scale(0)'  >
           <div class="cartc-bg db"></div>
           <div class="cartc-box rela overflow">
             <div class="main">
@@ -70,7 +70,7 @@
     background: url(../../common/imgs/ChangeImgs.png) no-repeat;
     width: 41px;
     height: 46px;
-    background-size: 80px auto;
+    /*background-size: 80px auto;*/
     background-size 200% 100%
     position: fixed;
     bottom: 15%;
@@ -94,7 +94,7 @@
       -moz-transition: all .4s linear 0s;
       -o-transition: all .4s linear 0s;
       -ms-transition: all .4s linear 0s;
-      transition: all .4s linear 0s;
+      transition: all .5s linear 0s;
       position: fixed;
       top: 0;
       width: 100%;

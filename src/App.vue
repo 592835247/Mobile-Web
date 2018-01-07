@@ -67,6 +67,7 @@
       a
         display block
         color #7e8c8d
+        /*background url("../")*/
         &.router-link-active
           color: rgb(240,20,20)
       .home

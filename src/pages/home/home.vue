@@ -1,6 +1,9 @@
 <template>
   <div>
     <Eheader/>
+    <scroller :on-infinite="infinite"
+              noDataText="瞎翻啥，没东西了！！！！"
+    >>
       <div id="indexbox" class="main">
         <!--Tap下划线还没完成-->
         <div class="popup"></div>
@@ -45,8 +48,6 @@
             </a>
           </div>
         </div>
-        <!--切换站点-->
-        <ChangeStation/>
         <!--商家活动 限时抢购-->
         <div class="surprise_day">
           <!--包裹器-->
@@ -94,9 +95,11 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+    </scroller>
+    <!--切换站点-->
+    <ChangeStation/>
   </div>
 
 </template>
@@ -132,7 +135,16 @@
       ...mapGetters(['LunboImg','goodsList','discount'])
     },
     methods:{
-
+      infinite (done) {
+        setTimeout(() => {
+          var start = this.bottom + 1
+          for (var i = start; i < start + 10; i++) {
+            this.items.push(i + ' - keep walking, be 2 with you.')
+          }
+          this.bottom = this.bottom + 5
+          done('sss')
+        }, 1500)
+      }
     }
   }
 </script>
@@ -221,7 +233,7 @@
     .pl5
       padding-left: 5px;
     .mb10
-      margin-bottom: 100px;
+      margin-bottom: 20px;
       margin-top 5px
       .swiper-container
         width:220%

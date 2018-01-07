@@ -8,6 +8,9 @@ import svgImage from './components/svg/svg_image.vue'
 import split from './components/split/split.vue'
 //将线注册全局组件
 Vue.component('split',split)
+//声明使用滑动插件 //内部定义了scroller全局标签
+import VueScroller from 'vue-scroller'
+Vue.use(VueScroller)
 //mock数据加载
 import './mock/mockServer'
 //引入横向滑动
