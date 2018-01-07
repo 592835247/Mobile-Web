@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="footRouter">
+    <div class="footRouter" v-show="$route.meta.isTop">
       <div class="tab-item"  @click.stop="refreshIndex">
         <router-link to="/home">  首页</router-link>
       </div>
@@ -14,7 +14,16 @@
         <router-link to="/myEpet">我的E宠</router-link>
       </div>
     </div>
-    <router-view />
+    <transition name="router-fade" mode="out-in">
+      <keep-alive>
+        <router-view v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+    </transition>
+    <transition name="router-fade" mode="out-in">
+      <keep-alive>
+        <router-view v-if="!$route.meta.keepAlive"></router-view>
+      </keep-alive>
+    </transition>
   </div>
 
 </template>
@@ -76,4 +85,9 @@
 
 
 
+  .router-fade-enter-active, .router-fade-leave-active
+    transition: all  .8s;
+  .router-fade-enter, .router-fade-leave-to
+    opacity: 0;
+  /*  transform translateX(100%)*/
 </style>

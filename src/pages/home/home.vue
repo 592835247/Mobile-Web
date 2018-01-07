@@ -3,7 +3,8 @@
     <Eheader/>
     <scroller :on-infinite="infinite"
               noDataText="瞎翻啥，没东西了！！！！"
-    >>
+    >
+      <div style="height: 14px"></div>
       <div id="indexbox" class="main">
         <!--Tap下划线还没完成-->
         <div class="popup"></div>
@@ -97,7 +98,9 @@
           </div>
         </div>
       </div>
+
     </scroller>
+
     <!--切换站点-->
     <ChangeStation/>
   </div>
@@ -137,11 +140,6 @@
     methods:{
       infinite (done) {
         setTimeout(() => {
-          var start = this.bottom + 1
-          for (var i = start; i < start + 10; i++) {
-            this.items.push(i + ' - keep walking, be 2 with you.')
-          }
-          this.bottom = this.bottom + 5
           done('sss')
         }, 1500)
       }
